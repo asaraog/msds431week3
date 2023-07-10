@@ -2,7 +2,7 @@ baseURL = "/"
 languageCode = "en-us"
 theme = "hugo-winston-theme"
 themesDir = "themes"
-title = "Hugo Winston Theme"
+title = "AutoNotes"
 paginate = 3
 pygmentsCodeFences = true
 pygmentsCodefencesGuessSyntax = true
@@ -57,7 +57,7 @@ pygmentsUseClasses = true
     weight = 2
     url = "/posts/"
   [[menu.main]]
-    name = "About"
+    name = "Pages"
     identifier = "about"
     weight = 3
     url = "/pages/"
