@@ -1,11 +1,8 @@
-# Hugo Winston Theme
+## Setting up a Website
 
-Hugo Winston is a bold minimal blogging theme.
+### Project Summary
 
-[Live Demo](https://hugo-winston.netlify.app/) |
-[Zerostatic Themes](https://www.zerostatic.io/)
-
-![Hugo Winston Theme screenshot](https://www.zerostatic.io/theme/hugo-winston/hugo-winston-screenshot.png)
+Our company 'AutoNotes' aims to build an personal knowledge base product that rivals Obsidian without the need to know Markdown syntax. Go will be help power our backend web and database servers and distributed service offerings on the cloud. However, additional investors will be needed for this year-long project. To promote our product, we have created a basic website using [HUGO](https://gohugo.io). The theme for this website is the [Hugo Winston theme](https://themes.gohugo.io/themes/hugo-winston-theme/). This theme does have a [Live Demo](https://hugo-winston.netlify.app/) which made it simple to deploy onto [Netlify](https://www.netlify.com/). All descriptions are fictional and generated using [ChatGPT](https://chat.openai.com/).
 
 ## Theme features
 
@@ -32,47 +29,16 @@ To use this theme you will first need to have Hugo installed. Please follow the 
 
 This theme uses [Hugo Pipes](https://gohugo.io/hugo-pipes/scss-sass/) to compile SCSS and minify assets which means if you are not using the Hugo extended version this theme will not work. To check your version of Hugo, run `hugo version`. Make sure you see **/extended** after the version number, for example _Hugo Static Site Generator v0.51/extended darwin/amd64 BuildDate: unknown_ You do not need to use version v0.51 specifically, it just needs to have the _/extended_ part.
 
-**2. Create a new Hugo site**
+**2. Import Hugo site locally**
 
-This will create a fresh Hugo site in the folder `mynewsite`.
-
-```
-hugo new site mynewsite
-```
-
-**3. Install the theme**
-
-Download or git clone this theme into the sites themes folder `mynewsite/themes`. You should end up with the following folder structure `mynewsite/themes/hugo-winston-theme`
+Download or git clone this project onto local machine into folder on local machine.
 
 ```
-cd mynewsite
-git clone https://github.com/zerostaticthemes/hugo-winston-theme.git themes/hugo-winston-theme
+git clone https://github.com/asaraog/msds431week3.git
+cd msds431week3
+cd exampleSite
+hugo serve
 ```
-
-**4. Copy the example content**
-
-Copy the entire contents of the `mynewsite/themes/hugo-winston-theme/exampleSite/` folder to root folder of your Hugo site, ie `mynewsite/`. To copy the files using terminal, make sure you are still in the projects root, ie the `mynewsite` folder.
-
-```
-cp -a themes/hugo-winston-theme/exampleSite/. .
-```
-
-**6. Run Hugo**
-
-After installing the theme for the first time, generate the Hugo site.
-
-You run this command from the root folder of your Hugo site ie `mynewsite`
-
-```
-hugo
-```
-
-For local development run Hugo's built-in local server.
-
-```
-hugo server
-```
-
 Now enter [`localhost:1313`](http://localhost:1313) in the address bar of your browser.
 
 # Configuration
@@ -133,18 +99,3 @@ This is `data-domain` in your [tracking script code](https://plausible.io/docs/p
 
 This theme includes a `netlify.toml` which is [configured to deploy to Netlify](https://discourse.gohugo.io/t/deploy-your-theme-to-netlify/15508) from the `exampleSite` folder. If you have installed this theme into a new Hugo site and the exampleSite folder was copied or removed, you should delete the `netlify.toml` file.
 
-
-### More Hugo Themes by Zerostatic
-
-- [Hugo Hero](https://github.com/zerostaticthemes/hugo-hero-theme) - Open-source business theme
-- [Hugo Whisper](https://github.com/zerostaticthemes/hugo-whisper-theme) - Open-source documentation theme
-- [Hugo Serif](https://github.com/zerostaticthemes/hugo-serif-theme) - Open-source business theme
-- [Hugo Winston](https://github.com/zerostaticthemes/hugo-winston-theme) - Open-source blog theme
-- [Hugo Advance](https://www.zerostatic.io/theme/hugo-advance/) - Premium advanced multi page business & marketing theme
-- [Hugo Paradigm](https://www.zerostatic.io/theme/hugo-paradigm/) - Premium landing page + site builder theme
-- [Hugo Lever](https://www.zerostatic.io/theme/hugo-lever/) - Premium personal / bio theme
-- [Hugo Shard](https://www.zerostatic.io/theme/hugo-lever/) - Premium SAAS / landing page theme
-
-### Find hundreds more Hugo themes on Built At Lightspeed
-
-[<img alt="Built At Lightspeed Hugo themes directory screenshot" width="400px" src="https://www.zerostatic.io/images/builtatlightspeed-hugo-themes.jpg" />](https://builtatlightspeed.com/category/hugo)
